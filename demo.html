@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Devin AI - 增强版演示</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="carousel_styles.css">
+</head>
+
+<body>
+  <!-- Page Transition Overlay (will be added by JS) -->
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-icon">🤖</span>
+        <span class="logo-text">Devin AI - 增强版</span>
+      </div>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#hero" class="nav-link active">首页</a></li>
+        <li><a href="#success-stories" class="nav-link">成功案例</a></li>
+        <li><a href="#capabilities" class="nav-link">能力</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <div class="hero-background">
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+      <div class="gradient-orb orb-3"></div>
+    </div>
+    <div class="container hero-content">
+      <div class="hero-text fade-in">
+        <h1 class="hero-title">
+          <span class="title-line">Devin AI</span>
+          <span class="title-line gradient-text">增强版演示</span>
+        </h1>
+        <p class="hero-subtitle">
+          体验全新的交互式轮播和页面切换动画
+        </p>
+        <div class="hero-buttons">
+          <a href="#success-stories" class="btn btn-primary">
+            <span>查看案例</span>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Success Stories Carousel Section -->
+  <section id="success-stories" class="section section-carousel">
+    <div class="container">
+      <div class="section-header fade-in-up">
+        <span class="section-tag">成功案例</span>
+        <h2 class="section-title">Devin AI 实战应用</h2>
+        <p class="section-description">
+          看看Devin AI如何帮助不同团队提升开发效率
+        </p>
+      </div>
+
+      <div class="carousel-container">
+        <div class="carousel-wrapper" id="carouselWrapper">
+          <!-- Story 1 -->
+          <div class="carousel-slide active">
+            <div class="story-card">
+              <div class="story-header">
+                <div class="story-icon">🚀</div>
+                <div class="story-meta">
+                  <h3>电商平台重构</h3>
+                  <p class="story-company">某大型电商公司</p>
+                </div>
+              </div>
+              <div class="story-content">
+                <p class="story-description">
+                  使用Devin AI协助重构遗留系统,将原本需要6个月的项目缩短到2个月完成。
+                  AI自动处理了80%的代码迁移工作,团队专注于业务逻辑优化。
+                </p>
+                <div class="story-stats">
+                  <div class="stat">
+                    <div class="stat-number">3x</div>
+                    <div class="stat-label">速度提升</div>
+                  </div>
+                  <div class="stat">
+                    <div class="stat-number">80%</div>
+                    <div class="stat-label">自动化率</div>
+                  </div>
+                  <div class="stat">
+                    <div class="stat-number">0</div>
+                    <div class="stat-label">重大Bug</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Story 2 -->
+          <div class="carousel-slide">
+            <div class="story-card">
+              <div class="story-header">
+                <div class="story-icon">💡</div>
+                <div class="story-meta">
+                  <h3>创业公司MVP开发</h3>
+                  <p class="story-company">AI驱动的SaaS初创公司</p>
+                </div>
+              </div>
+              <div class="story-content">
+                <p class="story-description">
+                  小团队利用Devin AI在3周内完成了完整的MVP开发,包括前端、后端和数据库设计。
+                  AI处理了基础架构搭建,让创始人专注于产品创新和用户体验。
+                </p>
+                <div class="story-stats">
+                  <div class="stat">
+                    <div class="stat-number">3周</div>
+                    <div class="stat-label">上线时间</div>
+                  </div>
+                  <div class="stat">
+                    <div class="stat-number">2人</div>
+                    <div class="stat-label">团队规模</div>
+                  </div>
+                  <div class="stat">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">测试覆盖</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Story 3 -->
+          <div class="carousel-slide">
+            <div class="story-card">
+              <div class="story-header">
+                <div class="story-icon">🔧</div>
+                <div class="story-meta">
+                  <h3>技术债务清理</h3>
+                  <p class="story-company">金融科技公司</p>
+                </div>
+              </div>
+              <div class="story-content">
+                <p class="story-description">
+                  Devin AI帮助识别和重构了超过10万行遗留代码,自动更新过时的依赖项,
+                  并生成完整的测试套件。代码质量显著提升,维护成本降低60%。
+                </p>
+                <div class="story-stats">
+                  <div class="stat">
+                    <div class="stat-number">10万+</div>
+                    <div class="stat-label">代码行数</div>
+                  </div>
+                  <div class="stat">
+                    <div class="stat-number">60%</div>
+                    <div class="stat-label">成本降低</div>
+                  </div>
+                  <div class="stat">
+                    <div class="stat-number">A+</div>
+                    <div class="stat-label">代码质量</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Story 4 -->
+          <div class="carousel-slide">
+            <div class="story-card">
+              <div class="story-header">
+                <div class="story-icon">🌐</div>
+                <div class="story-meta">
+                  <h3>多平台应用开发</h3>
+                  <p class="story-company">移动应用开发团队</p>
+                </div>
+              </div>
+              <div class="story-content">
+                <p class="story-description">
+                  使用Devin AI同时开发iOS、Android和Web三个平台的应用。
+                  AI确保了跨平台的一致性,自动处理平台特定的适配工作,大幅提升开发效率。
+                </p>
+                <div class="story-stats">
+                  <div class="stat">
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">平台</div>
+                  </div>
+                  <div class="stat">
+                    <div class="stat-number">5x</div>
+                    <div class="stat-label">效率提升</div>
+                  </div>
+                  <div class="stat">
+                    <div class="stat-number">99%</div>
+                    <div class="stat-label">代码复用</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carousel Controls -->
+        <div class="carousel-controls">
+          <button class="carousel-btn carousel-prev" id="carouselPrev" aria-label="Previous slide">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+          <div class="carousel-dots" id="carouselDots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+            <span class="dot" data-slide="3"></span>
+          </div>
+          <button class="carousel-btn carousel-next" id="carouselNext" aria-label="Next slide">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Auto-play indicator -->
+        <div class="carousel-progress">
+          <div class="progress-bar" id="progressBar"></div>
+        </div>
+      </div>
+
+      <!-- Instructions -->
+      <div
+        style="margin-top: 3rem; text-align: center; padding: 2rem; background: rgba(255,255,255,0.9); border-radius: 12px;">
+        <h3 style="color: #667eea; margin-bottom: 1rem;">✨ 交互功能说明</h3>
+        <div
+          style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; text-align: left;">
+          <div>
+            <strong>🖱️ 鼠标操作:</strong>
+            <p style="font-size: 0.9rem; color: #6b7280;">点击左右箭头切换</p>
+          </div>
+          <div>
+            <strong>⌨️ 键盘操作:</strong>
+            <p style="font-size: 0.9rem; color: #6b7280;">使用左右方向键</p>
+          </div>
+          <div>
+            <strong>📱 触摸操作:</strong>
+            <p style="font-size: 0.9rem; color: #6b7280;">左右滑动切换</p>
+          </div>
+          <div>
+            <strong>⏸️ 自动播放:</strong>
+            <p style="font-size: 0.9rem; color: #6b7280;">鼠标悬停暂停</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Capabilities Section (Simplified) -->
+  <section id="capabilities" class="section">
+    <div class="container">
+      <div class="section-header fade-in-up">
+        <span class="section-tag">核心能力</span>
+        <h2 class="section-title">Devin 的强大功能</h2>
+      </div>
+      <div class="content-grid">
+        <div class="card fade-in-up">
+          <div class="card-icon">💻</div>
+          <h3>全栈开发</h3>
+          <p>精通前端、后端、数据库等全栈技术</p>
+        </div>
+        <div class="card fade-in-up" style="animation-delay: 0.1s">
+          <div class="card-icon">🔍</div>
+          <h3>调试与优化</h3>
+          <p>自动识别和修复bug,优化代码性能</p>
+        </div>
+        <div class="card fade-in-up" style="animation-delay: 0.2s">
+          <div class="card-icon">🚀</div>
+          <h3>部署与运维</h3>
+          <p>处理CI/CD流程,自动化部署</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>🤖 Devin AI - 增强版</h3>
+          <p>展示全新的交互功能</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Devin AI. 增强版演示.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="carousel.js"></script>
+</body>
+
+</html>
